@@ -1,6 +1,18 @@
+@import "./utils/variables";
+@import "./utils/fonctions";
+@import "./utils/mixins";
+@import "./base/typography";
+@import "./composants/buttons";
+@import "./layout/header";
+@import "./layout/footer";
+@import "./layout/menu-part";
+@import "./pages/index";
+@import "./pages/restos";
+
+
 header h1 {
     font-family: Shrikhand;
-    color: black;
+    color: $reding;
 }
 header a{
     text-decoration: none;
