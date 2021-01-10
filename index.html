@@ -14,21 +14,98 @@
 
 <body>
 
-  <header id="header-index">
+  <header class="header-index">
     <a href="index.html">
       <h1>ohmyfood</h1>
   </a>
 
-  <p> test main page</p>
+  <div class="header-index__location">
+    <i class="fas fa-map-marker-alt"></i>
+    <form method="post">
+      <label for="location">
+          <input id="location" type="text" name="location" value="Paris, Belleville">
+      </label>
+  </form>
+  <h2> Réservez le menu qui vous convient</h2>
+  <h3>Découvrez des restaurants d'exception, séléctionés par nos soins.</h3>
+  <a href="#" class="header-index__button"> Explorer nos restaurants</a>
 
-  <a href="resto1palette.html"> 
-    <p>site palette</p>
-  </a>
+  </div>
+
+  <section class="fonctionement"> 
+    <h2>Fonctionement</h2>
+    <div class="fonctionement__btn fonctionement__btn--1">
+      <i class="fas fa-mobile-alt"></i>
+        <p>Choisissez un restaurant</p>
+    </div>
+    <div class="fonctionement__btn fonctionement__btn--2">
+      <i class="fas fa-list-ul"></i>
+        <p>Composez votre menu</p>
+    </div>
+    <div class="fonctionement__btn fonctionement__btn--3">
+      <i class="fas fa-store"></i>
+      <p>Dégustez au restaurant</p>
+    </div>
+
+  </section>
+  <h2>Restaurants</h2>
+
+  <section class="restaurants-index">
+
+    <div class="resto-card">
+      <a href="resto1palette.html"> 
+      <p class="resto-card__new">Nouveau</p>
+      <img class="resto-card__image" src="images/restaurants/resto1.jpg" alt="La palette du goût">
+      <p class="resto-card__titre">La palette du goût</p>
+      <p class="resto-card__soustitre">Ménilmontant</p>
+        <i class="fas fa-heart"></i>
+      </a>
+    </div>
+
+    <div class="resto-card">
+      <a href="resto2note.html"> 
+      <p class="resto-card__new">Nouveau</p>
+      <img class="resto-card__image" src="images/restaurants/resto2.jpg" alt="La palette du goût">
+      <p class="resto-card__titre">La note enchantée</p>
+      <p class="resto-card__soustitre">Charonne</p>
+        <i class="fas fa-heart"></i>
+      </a>
+    </div>
+
+    <div class="resto-card">
+      <a href="resto3francaise.html"> 
+      <img class="resto-card__image" src="images/restaurants/resto3.jpg" alt="La palette du goût">
+      <p class="resto-card__titre">À la française</p>
+      <p class="resto-card__soustitre">Cité Rouge</p>
+        <i class="fas fa-heart"></i>
+      </a>
+    </div>
+
+    <div class="resto-card">
+      <a href="resto4delice.html"> 
+      <img class="resto-card__image" src="images/restaurants/resto4.jpg" alt="La palette du goût">
+      <p class="resto-card__titre">Le délice des sens</p>
+      <p class="resto-card__soustitre">Folie-Méricourt</p>
+        <i class="fas fa-heart"></i>
+      </a>
+    </div>
+
+
+
+
+  </section>
+
+  
 
   </header>
 
 
-  <footer id="index-footer">
+
+
+
+
+
+  <footer class="footer">
     <h1>ohmyfood</h1>
     <div>
         <a href="">
