@@ -37,19 +37,22 @@ h3 {
   padding-bottom: 11px;
   background-color: #EAEAEA;
   border-top: #D6D6D6 solid;
-}
-.header-index__location form {
-  display: inline-block;
+  justify-content: center;
 }
 .header-index__location input[type=text] {
   display: inline;
   text-align: center;
-  background-color: white;
-  font-weight: bold;
+  background-color: #EAEAEA;
+  font-weight: 400;
   width: 150px;
+  border: none;
+  color: #353535;
+}
+.header-index__location .fa-map-marker-alt {
+  color: #353535;
 }
 .header-index__text {
-  background-color: lightgrey;
+  background-color: #F6F6F6;
 }
 .header-index__text h2 {
   font-weight: 500;
@@ -60,10 +63,11 @@ h3 {
   padding-left: 50px;
 }
 .header-index__text h3 {
-  font-weight: lighter;
+  font-weight: 300;
   padding-right: 10px;
   padding-left: 10px;
   font-size: 1.1rem;
+  color: #757575;
 }
 .header-index__button {
   margin: 15% auto 15% auto;
@@ -87,6 +91,17 @@ h3 {
 
 .fonctionement h2 {
   padding-left: 15px;
+}
+.fonctionement__btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 15px;
+  width: 320px;
+  height: 70px;
+  background-color: #F6F6F6;
+  margin-top: 20px;
+  box-shadow: 5px 5px 15px 5px #C1C1C1;
 }
 
 /*# sourceMappingURL=style.css.map */

@@ -20,24 +20,29 @@
         padding-bottom: 11px;
         background-color: $lightgrey2;
         border-top: $greyline solid;
+        justify-content: center;
         
-        
-        
-        form {
-            display: inline-block;
-        }
         
         input[type=text] {
             display: inline;
             text-align: center;
-            background-color: white;
-            font-weight: bold;
+            background-color: $lightgrey2;
+            font-weight: 400;
             width: 150px;
+            border: none;
+            color: $greytext;
+
+        }
+
+        .fa-map-marker-alt {
+            color: $greytext;
         }
     }
 
+     
+
     &__text {
-        background-color: lightgrey;
+        background-color: $lightgrey1;
         
         h2 { font-weight:500;
             font-size: 1.4rem;
@@ -48,10 +53,11 @@
         }
 
         h3 {
-            font-weight: lighter;
+            font-weight: 300;
             padding-right: 10px;
             padding-left: 10px;
             font-size: 1.1rem;
+            color: lighten($greytext, 25);
 
         }
         
@@ -81,8 +87,5 @@
     }
 
 }
-
-
-
     
 }

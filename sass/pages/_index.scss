@@ -2,4 +2,20 @@
     h2 {
         padding-left: 15px;
     }
+
+
+
+    &__btn {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 15px;
+        width: 320px;
+        height: 70px;
+        background-color: $lightgrey1;
+        margin-top: 20px;
+        box-shadow:  5px 5px 15px 5px #C1C1C1;
+
+    }
 }
+
