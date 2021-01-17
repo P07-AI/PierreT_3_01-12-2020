@@ -1,0 +1,54 @@
+.footer {
+    background-color: #353535;
+    color: white;
+    margin: 0px;
+    padding-bottom: 40px;
+    
+    h1 {
+        padding: 20px 15px 0px 20px;
+        margin-bottom: 20px;
+        font-family: Shrikhand;
+        color: white;
+        font-size: 1.2rem;
+      }
+
+    a {
+        text-decoration: none;
+        color: white;
+        display: flex;
+        align-items: center;
+        padding-left: 20px;
+        
+    }
+
+
+    a:first-child p {
+        margin: 0px;
+        padding-bottom: 5px;
+
+      }
+
+      a:nth-child(2) p {
+        margin: 0px;
+        margin-bottom: 10px;
+      }
+
+
+    .fa-utensils {
+        padding-right: 10px;
+        font-size: 90%;
+        
+    }
+
+    .fa-hands-helping {
+        padding-right: 10px;
+        font-size: 70%;
+        
+    }
+
+    a:nth-child(3) {
+        padding-bottom: 8px;
+      }
+
+   
+}
