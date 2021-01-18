@@ -1,9 +1,24 @@
 
+//main layout//
+.container {
+    margin: 0px;
+}
+
+
+
+
+
+
 //Section  Fonctionement//
 
 .fonctionement {
+
+    
+
     h2 {
+        padding-top: 20px;
         padding-left: 15px;
+        padding-bottom: 10px;
     }
 
 
@@ -18,18 +33,60 @@
         background-color: $lightgrey1;
         margin-top: 20px;
         box-shadow:  5px 5px 15px 5px #C1C1C1;
+        margin-left: auto;
+        margin-right: auto;
+        
 
     }
+
+    .fonctionement__btn--1 {
+
+        
+
+        .fa-mobile-alt {
+            font-size: 125%;
+            margin-right: 30px;
+            margin-left: -35px;
+            color: lighten($greytext, 20%);
+        }
+
+    }
+
+    .fonctionement__btn--2 {
+
+        .fa-list-ul {
+            font-size: 125%;
+            margin-right: 30px;
+            margin-left: -30px;
+            color: lighten($greytext, 20%);
+        }
+
+    }
+
+    .fonctionement__btn--3 {
+        
+        .fa-store {
+            font-size: 125%;
+            margin-right: 30px;
+            margin-left: -30px;
+            color: lighten($greytext, 20%);
+        }
+
+    }
+
+    
 }
 
 
 //Section  Restaurants//
 
 .restaurants-index {
-    margin-top: 80px;
-    padding-top: 30px;
+    margin-top: 65px;
+    padding-bottom: 60px;
+    
     background-color: $lightgrey1;
     h2 {
+        padding-top: 30px;
         padding-left: 15px;
     }
 
@@ -41,6 +98,9 @@
     border-radius: 10px;
     width: 330px;
     height: 250px;
+    margin-left: auto;
+    margin-right: auto;
+    
 
     a {
         text-decoration: none;

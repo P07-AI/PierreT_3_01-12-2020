@@ -97,6 +97,7 @@ h3 {
   font-family: Shrikhand;
   color: white;
   font-size: 1.2rem;
+  margin-top: 0px;
 }
 .footer a {
   text-decoration: none;
@@ -125,8 +126,14 @@ h3 {
   padding-bottom: 8px;
 }
 
+.container {
+  margin: 0px;
+}
+
 .fonctionement h2 {
+  padding-top: 20px;
   padding-left: 15px;
+  padding-bottom: 10px;
 }
 .fonctionement__btn {
   display: flex;
@@ -138,14 +145,35 @@ h3 {
   background-color: #F6F6F6;
   margin-top: 20px;
   box-shadow: 5px 5px 15px 5px #C1C1C1;
+  margin-left: auto;
+  margin-right: auto;
+}
+.fonctionement .fonctionement__btn--1 .fa-mobile-alt {
+  font-size: 125%;
+  margin-right: 30px;
+  margin-left: -35px;
+  color: #686868;
+}
+.fonctionement .fonctionement__btn--2 .fa-list-ul {
+  font-size: 125%;
+  margin-right: 30px;
+  margin-left: -30px;
+  color: #686868;
+}
+.fonctionement .fonctionement__btn--3 .fa-store {
+  font-size: 125%;
+  margin-right: 30px;
+  margin-left: -30px;
+  color: #686868;
 }
 
 .restaurants-index {
-  margin-top: 80px;
-  padding-top: 30px;
+  margin-top: 65px;
+  padding-bottom: 60px;
   background-color: #F6F6F6;
 }
 .restaurants-index h2 {
+  padding-top: 30px;
   padding-left: 15px;
 }
 
@@ -155,6 +183,8 @@ h3 {
   border-radius: 10px;
   width: 330px;
   height: 250px;
+  margin-left: auto;
+  margin-right: auto;
 }
 .resto-card a {
   text-decoration: none;
