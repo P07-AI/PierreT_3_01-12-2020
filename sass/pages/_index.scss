@@ -35,11 +35,20 @@
         margin-left: auto;
         margin-right: auto;
         
+        &:hover {
+            background-color: lighten($secondaire, 23%);
+            
+          }
 
     }
 
     .fonctionement__btn--1 {
 
+        &:hover {
+            .fa-mobile-alt {
+                color: $primaire;
+            }
+        }
         
 
         .fa-mobile-alt {
@@ -47,11 +56,34 @@
             margin-right: 30px;
             margin-left: -35px;
             color: lighten($greytext, 20%);
+            
         }
+
+        &.fonctionement__btn--1::before {
+            content: "1";
+            height: 4px;
+            width: 4px;
+            background-color: $primaire;
+            border-radius: 50px;
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 10px;
+            position: relative;
+            left: -68px;
+            font-weight: 400;
+          }
 
     }
 
     .fonctionement__btn--2 {
+
+        &:hover {
+            .fa-list-ul {
+                color: $primaire;
+            }
+        }
 
         .fa-list-ul {
             font-size: 125%;
@@ -60,9 +92,31 @@
             color: lighten($greytext, 20%);
         }
 
+        &.fonctionement__btn--2::before {
+            content: "2";
+            height: 4px;
+            width: 4px;
+            background-color: $primaire;
+            border-radius: 50px;
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 10px;
+            position: relative;
+            left: -69px;
+            font-weight: 400;
+          }
+
     }
 
     .fonctionement__btn--3 {
+
+        &:hover {
+            .fa-store {
+                color: $primaire;
+            }
+        }
         
         .fa-store {
             font-size: 125%;
@@ -70,6 +124,22 @@
             margin-left: -30px;
             color: lighten($greytext, 20%);
         }
+
+        &.fonctionement__btn--3::before {
+            content: "3";
+            height: 4px;
+            width: 4px;
+            background-color: $primaire;
+            border-radius: 50px;
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 10px;
+            position: relative;
+            left: -65px;
+            font-weight: 400;
+          }
 
     }
 
@@ -100,6 +170,7 @@
     margin-left: auto;
     margin-right: auto;
     position: relative;
+    box-shadow: 1px 6px 15px 4px rgba(0,0,0,0.2);
     
 
     a {

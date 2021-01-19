@@ -148,11 +148,35 @@ h3 {
   margin-left: auto;
   margin-right: auto;
 }
+.fonctionement__btn:hover {
+  background-color: #ffeefa;
+}
+.fonctionement .fonctionement__btn--1:hover .fa-mobile-alt {
+  color: #9356DC;
+}
 .fonctionement .fonctionement__btn--1 .fa-mobile-alt {
   font-size: 125%;
   margin-right: 30px;
   margin-left: -35px;
   color: #686868;
+}
+.fonctionement .fonctionement__btn--1.fonctionement__btn--1::before {
+  content: "1";
+  height: 4px;
+  width: 4px;
+  background-color: #9356DC;
+  border-radius: 50px;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  position: relative;
+  left: -68px;
+  font-weight: 400;
+}
+.fonctionement .fonctionement__btn--2:hover .fa-list-ul {
+  color: #9356DC;
 }
 .fonctionement .fonctionement__btn--2 .fa-list-ul {
   font-size: 125%;
@@ -160,11 +184,44 @@ h3 {
   margin-left: -30px;
   color: #686868;
 }
+.fonctionement .fonctionement__btn--2.fonctionement__btn--2::before {
+  content: "2";
+  height: 4px;
+  width: 4px;
+  background-color: #9356DC;
+  border-radius: 50px;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  position: relative;
+  left: -69px;
+  font-weight: 400;
+}
+.fonctionement .fonctionement__btn--3:hover .fa-store {
+  color: #9356DC;
+}
 .fonctionement .fonctionement__btn--3 .fa-store {
   font-size: 125%;
   margin-right: 30px;
   margin-left: -30px;
   color: #686868;
+}
+.fonctionement .fonctionement__btn--3.fonctionement__btn--3::before {
+  content: "3";
+  height: 4px;
+  width: 4px;
+  background-color: #9356DC;
+  border-radius: 50px;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  position: relative;
+  left: -65px;
+  font-weight: 400;
 }
 
 .restaurants-index {
@@ -186,6 +243,7 @@ h3 {
   margin-left: auto;
   margin-right: auto;
   position: relative;
+  box-shadow: 1px 6px 15px 4px rgba(0, 0, 0, 0.2);
 }
 .resto-card a {
   text-decoration: none;
