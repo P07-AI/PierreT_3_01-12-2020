@@ -185,6 +185,7 @@ h3 {
   height: 250px;
   margin-left: auto;
   margin-right: auto;
+  position: relative;
 }
 .resto-card a {
   text-decoration: none;
@@ -211,18 +212,30 @@ h3 {
   margin-top: -15px;
 }
 .resto-card__new {
-  position: relative;
-  right: 5px;
-  top: 5px;
+  position: absolute;
+  right: 15px;
+  top: 15px;
+  border-radius: 3px;
   background-color: #99E2D0;
-  padding: 2px 4px 2px 4px;
-  font-weight: bold;
+  padding: 4px 8px 4px 8px;
+  font-weight: 500;
+  font-size: 0.9rem;
   color: #278870;
+  margin: 0;
 }
 .resto-card .fa-heart {
-  position: relative;
-  right: 13px;
-  bottom: 13px;
+  position: absolute;
+  right: 23px;
+  bottom: 23px;
+}
+.resto-card .fa-heart {
+  color: #f5f5f5;
+  font-size: 1.3rem;
+  -webkit-text-stroke: 1px #353535;
+  transition: linear-gradient(10deg, #9356DC, #F074DA) 1500ms;
+}
+.resto-card .fa-heart:hover {
+  color: #9356DC;
 }
 
 /*# sourceMappingURL=style.css.map */
