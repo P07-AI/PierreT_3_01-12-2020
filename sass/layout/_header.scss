@@ -1,6 +1,7 @@
 
 .header-index{
     text-align: center;
+    
 
     h1 {
         font-family: Shrikhand;
@@ -37,9 +38,11 @@
         .fa-map-marker-alt {
             color: $greytext;
         }
+
+        
     }
 
-     
+    
 
     &__text {
         background-color: $lightgrey1;
@@ -88,4 +91,16 @@
 
 }
     
+}
+
+//Header in restaurant page//
+
+
+.fa-arrow-left {
+    font-size: 1.3rem;
+    color: $greytext;
+    position: absolute;
+    left: 20px;
+    padding-top: 15px;
+
 }
