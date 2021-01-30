@@ -1,3 +1,30 @@
+@keyframes fadein {
+  from {
+    opacity: 0;
+    transform: translateY(50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+.dish-card {
+  animation: fadein 1.5s;
+  animation-fill-mode: backwards;
+}
+.dish-card:nth-of-type(1) {
+  animation-delay: 0.4s;
+}
+.dish-card:nth-of-type(2) {
+  animation-delay: 0.8s;
+}
+.dish-card:nth-of-type(3) {
+  animation-delay: 1.2s;
+}
+.dish-card:nth-of-type(4) {
+  animation-delay: 1.6s;
+}
+
 * {
   font-family: "Roboto", sans-serif;
   font-size: 1rem;
@@ -360,27 +387,92 @@ h3 {
   padding-bottom: 0px;
   margin-bottom: 5px;
 }
-.card .card__item {
+
+.dish-card {
+  min-width: 100%;
   display: flex;
-  flex-direction: column;
   box-shadow: 2px 3px 10px rgba(0, 0, 0, 0.1);
   border-radius: 15px;
   position: relative;
+  overflow: hidden;
   margin: 20px 0;
-  padding-left: 10px;
   cursor: pointer;
   background-color: white;
 }
-.card .card__item h3 {
-  margin-bottom: 0px;
+.dish-card:active .dish-card-check {
+  right: 0;
+  flex: 1;
 }
-.card .card__item p {
+.dish-card:active .dish-card-check > i {
+  animation: rotation 500ms linear;
+}
+.dish-card:hover .dish-card-check {
+  right: 0;
+  flex: 1;
+}
+.dish-card:hover .dish-card-check > i {
+  animation: rotation 500ms linear;
+}
+.dish-card .dish-card-content {
+  flex: 4;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 13px;
+  overflow: auto;
+}
+.dish-card .dish-card-content h3 {
   margin-top: 0px;
-  padding-top: 5px;
+  margin-bottom: 0px;
+  font-weight: 400;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.dish-card .dish-card-content .description {
+  margin: 6px 0 0 0;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  align-items: center;
+  flex: 1;
+}
+.dish-card .dish-card-content .description p:first-child {
+  margin: 0;
   color: #6E6E6E;
 }
-.card .description {
+.dish-card .dish-card-content .description p:last-child {
+  padding-left: 10px;
+  margin: 0;
+  font-weight: 400;
+}
+.dish-card .dish-card-check {
+  flex: 0;
+  position: relative;
+  right: -20%;
+  transition: all 500ms linear;
   display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #99E2D0;
+  color: white;
+  border-radius: 0 15px 15px 0;
+  cursor: pointer;
+}
+.dish-card .dish-card-check i {
+  font-size: 2.2rem;
+}
+
+@keyframes rotation {
+  0% {
+    transform: rotate(270deg);
+  }
+  50% {
+    transform: rotate(180deg);
+  }
+  100% {
+    transform: rotate(0);
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
