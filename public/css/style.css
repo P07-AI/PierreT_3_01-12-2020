@@ -110,6 +110,7 @@ h3 {
   box-shadow: 0 0 3px #ac007d;
   transition: all 200ms;
   text-shadow: 0 1px 1px #2f2f2f;
+  box-shadow: 3px 4px 10px rgba(0, 0, 0, 0.1);
 }
 
 .fa-arrow-left {
@@ -326,6 +327,7 @@ h3 {
   font-size: 1.3rem;
   -webkit-text-stroke: 1px #353535;
   transition: linear-gradient(10deg, #9356DC, #F074DA) 1500ms;
+  transition: color 1500ms;
 }
 .resto-card .fa-heart:hover {
   color: #9356DC;
@@ -356,6 +358,7 @@ h3 {
   transition: linear-gradient(10deg, #9356DC, #F074DA) 1500ms;
   padding-top: 25px;
   padding-left: 35px;
+  transition: color 1500ms;
 }
 .restaurants-titre .fa-heart:hover {
   color: #9356DC;
@@ -473,6 +476,30 @@ h3 {
   100% {
     transform: rotate(0);
   }
+}
+.resto-end {
+  margin-top: 40px;
+  text-align: center;
+}
+.resto-end__button {
+  margin: 15% auto 15% auto;
+  border: none;
+  border-radius: 50px;
+  padding: 5%;
+  font-weight: bold;
+  font-size: 1.1rem;
+  color: white;
+  cursor: pointer;
+  display: inline-block;
+  min-width: 195px;
+  margin-top: 12px;
+}
+.resto-end__button.gradient {
+  background: linear-gradient(-10deg, #9356DC, #F074DA);
+  box-shadow: 0 0 3px #ac007d;
+  transition: all 200ms;
+  text-shadow: 0 1px 1px #2f2f2f;
+  box-shadow: 3px 4px 10px rgba(0, 0, 0, 0.1);
 }
 
 /*# sourceMappingURL=style.css.map */

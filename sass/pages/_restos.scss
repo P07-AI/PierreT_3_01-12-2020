@@ -29,6 +29,7 @@
         transition: linear-gradient(10deg, $primaire, #F074DA) 1500ms;
         padding-top: 25px;
         padding-left: 35px;
+        transition: color 1500ms;
 
         &:hover {
             color: $primaire;
@@ -173,3 +174,43 @@
       transform: rotate(0);
     }
   }
+
+//partie boutons fin pages restos
+  
+
+.resto-end {
+    margin-top: 40px;
+    text-align: center;
+
+    &__button {
+        margin: 15% auto 15% auto;
+        border: none;
+        border-radius: 50px;
+        padding: 5%;
+        font-weight: bold;
+        font-size: 1.1rem;
+        color: white;
+        cursor: pointer;
+        display: inline-block;
+        min-width: 195px;
+        margin-top: 12px;
+        
+        
+
+        &.gradient {
+            background: linear-gradient(-10deg, $primaire, #F074DA);
+            box-shadow: 0 0 3px darken($secondaire, 40);
+            transition: all 200ms;
+            text-shadow: 0 1px 1px rgb(47, 47, 47);
+            box-shadow: 3px 4px 10px rgba(0, 0, 0, 0.1);
+
+    }
+
+
+    }
+    
+}
+
+
+
+  

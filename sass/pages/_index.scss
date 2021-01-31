@@ -229,7 +229,8 @@
         font-size: 1.3rem;
         -webkit-text-stroke: 1px $greytext;
         transition: linear-gradient(10deg, $primaire, #F074DA) 1500ms;
-      
+        transition: color 1500ms;
+        
         &:hover {
           color: $primaire;
         }

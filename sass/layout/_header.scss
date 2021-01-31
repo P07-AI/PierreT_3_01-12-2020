@@ -79,6 +79,7 @@
         min-width: 195px;
         margin-top: 12px;
         
+        
     
 
         &.gradient {
@@ -86,6 +87,7 @@
             box-shadow: 0 0 3px darken($secondaire, 40);
             transition: all 200ms;
             text-shadow: 0 1px 1px rgb(47, 47, 47);
+            box-shadow: 3px 4px 10px rgba(0, 0, 0, 0.1);
 
     }
 
