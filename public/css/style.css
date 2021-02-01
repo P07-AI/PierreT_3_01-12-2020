@@ -112,6 +112,11 @@ h3 {
   text-shadow: 0 1px 1px #2f2f2f;
   box-shadow: 3px 4px 10px rgba(0, 0, 0, 0.1);
 }
+.header-index__button.gradient:hover {
+  background: linear-gradient(rgba(255, 255, 255, 0.089), rgba(255, 255, 255, 0.281)), #F074DA;
+  box-shadow: 0 0 10px #278870;
+  transition: ease 500ms;
+}
 
 .fa-arrow-left {
   font-size: 1.3rem;
@@ -500,6 +505,11 @@ h3 {
   transition: all 200ms;
   text-shadow: 0 1px 1px #2f2f2f;
   box-shadow: 3px 4px 10px rgba(0, 0, 0, 0.1);
+}
+.resto-end__button.gradient:hover {
+  background: linear-gradient(rgba(255, 255, 255, 0.089), rgba(255, 255, 255, 0.281)), #F074DA;
+  box-shadow: 0 0 10px #278870;
+  transition: ease 500ms;
 }
 
 /*# sourceMappingURL=style.css.map */

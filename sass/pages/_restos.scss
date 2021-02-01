@@ -203,7 +203,11 @@
             transition: all 200ms;
             text-shadow: 0 1px 1px rgb(47, 47, 47);
             box-shadow: 3px 4px 10px rgba(0, 0, 0, 0.1);
-
+            &:hover {
+                background: linear-gradient(rgba(255, 255, 255, 0.089), rgba(255, 255, 255, 0.281)), #F074DA;
+                box-shadow: 0 0 10px darken($tertiaire, 40);
+                transition:  ease 500ms;
+              }
     }
 
 
