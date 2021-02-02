@@ -139,3 +139,6 @@ $anim-delay: $anim-dur / $num-bars;
   animation: fadein2 3s backwards;
 }
 
+.header-index__intro, .restaurants, .footer {
+    animation: fadein2 3s backwards;
+  }

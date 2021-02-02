@@ -129,6 +129,10 @@
   animation: fadein2 3s backwards;
 }
 
+.header-index__intro, .restaurants, .footer {
+  animation: fadein2 3s backwards;
+}
+
 * {
   font-family: "Roboto", sans-serif;
   font-size: 1rem;
