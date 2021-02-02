@@ -32,3 +32,110 @@
       animation-delay: 1.6s;
     }
 }
+
+//annimation intro index
+$size: 3vh;
+$num-bars: 5;
+$anim-dur: 1000ms;
+$anim-delay: $anim-dur / $num-bars;
+
+.anim-container {
+  height: 100vh;
+  width: 100%;
+  background-color: rgba(255, 255, 255, 1);
+  position: absolute;
+}
+
+.load {
+  width: $size*10;
+  height: $size*7.5;
+  display: flex;
+  justify-content: space-evenly;
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  &__bar {
+    height: 100%;
+    width: $size;
+    animation: bars $anim-dur backwards infinite ease-in-out alternate;
+    @for $i from 1 through $num-bars {
+      &--#{$i} {
+        animation-delay: $anim-delay * $i;
+      }
+    }
+  }
+}
+
+@keyframes bars {
+  from {
+    transform: scaleY(0.5);
+  }
+  to {
+    transform: scaleY(1.0);
+  }
+}
+
+.load__bar--1 {
+  background-color: $secondaire;
+  animation-delay: 200ms;
+}
+
+.load__bar--2 {
+  background-color: $secondaire;
+  animation-delay: 400ms;
+}
+
+.load__bar--3 {
+  background-color: $secondaire;
+  animation-delay: 600ms;
+}
+
+.load__bar--4 {
+  background-color: $secondaire;
+  animation-delay: 800ms;
+}
+
+.load__bar--5 {
+  background-color: $secondaire;
+  animation-delay: 1000ms;
+}
+
+//disparition du loader
+
+@keyframes fadeout {
+  0% {
+    opacity: 1;
+  }
+  90% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    visibility: hidden;
+  }
+}
+
+@keyframes fadein2 {
+  0% {
+    opacity: 0;
+    visibility: hidden;
+  }
+  90% {
+    opacity: 0;
+    visibility: hidden;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.anim-container {
+  animation: fadeout 3s forwards;
+}
+
+.header-index, .fonctionement, .restaurants-index, .footer {
+  animation: fadein2 3s backwards;
+}
+
