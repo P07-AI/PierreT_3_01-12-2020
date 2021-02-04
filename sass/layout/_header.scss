@@ -79,7 +79,10 @@
         min-width: 195px;
         margin-top: 12px;
 
-    
+        @include desktop {
+            margin-bottom: 20px;
+            padding: 1%;
+          }
         
         
     

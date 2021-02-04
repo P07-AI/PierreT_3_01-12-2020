@@ -213,6 +213,12 @@ h3 {
   min-width: 195px;
   margin-top: 12px;
 }
+@media (min-width: 769px) {
+  .header-index__button {
+    margin-bottom: 20px;
+    padding: 1%;
+  }
+}
 .header-index__button.gradient {
   background: linear-gradient(-10deg, #9356DC, #F074DA);
   box-shadow: 0 0 3px #ac007d;
@@ -279,10 +285,22 @@ h3 {
   margin: 0px;
 }
 
+@media (min-width: 769px) {
+  .fonctionement .fonctio {
+    display: flex;
+    flex-direction: row;
+  }
+}
 .fonctionement h2 {
   padding-top: 20px;
   padding-left: 15px;
   padding-bottom: 10px;
+}
+@media (min-width: 769px) {
+  .fonctionement h2 {
+    margin-top: 0;
+    margin-bottom: 0;
+  }
 }
 .fonctionement__btn {
   display: flex;
@@ -381,6 +399,19 @@ h3 {
 .restaurants-index h2 {
   padding-top: 30px;
   padding-left: 15px;
+}
+@media (min-width: 769px) {
+  .restaurants-index h2 {
+    margin-top: 0;
+    margin-bottom: 15px;
+  }
+}
+
+@media (min-width: 769px) {
+  .restoindex {
+    display: flex;
+    flex-wrap: wrap;
+  }
 }
 
 .resto-card {

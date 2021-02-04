@@ -12,13 +12,30 @@
 
 .fonctionement {
 
+    .fonctio {
+        @include desktop {
+            display: flex;
+            flex-direction: row;
+
+          }
+    }
+        
     
 
     h2 {
         padding-top: 20px;
         padding-left: 15px;
         padding-bottom: 10px;
+        
+        @include desktop {
+            margin-top: 0;
+            margin-bottom: 0;
+            
+          }
+
+    
     }
+
 
 
 
@@ -157,8 +174,24 @@
     h2 {
         padding-top: 30px;
         padding-left: 15px;
+
+        @include desktop {
+            margin-top: 0;
+            margin-bottom: 15px;
+            
+          }
     }
 
+}
+
+.restoindex {
+
+    @include desktop {
+        display: flex;
+        flex-wrap: wrap;
+        
+      }
+    
 }
 
 .resto-card {
@@ -230,7 +263,7 @@
         -webkit-text-stroke: 1px $greytext;
         transition: linear-gradient(10deg, $primaire, #F074DA) 1500ms;
         transition: color 1500ms;
-        
+
         &:hover {
           color: $primaire;
         }
