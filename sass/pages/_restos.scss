@@ -26,7 +26,6 @@
         color: #f5f5f5;
         font-size: 1.3rem;
         -webkit-text-stroke: 1px $greytext;
-        transition: linear-gradient(10deg, $primaire, #F074DA) 1500ms;
         padding-top: 25px;
         padding-left: 35px;
         transition: color 1500ms;
@@ -52,12 +51,44 @@
 .card {
     padding-left: 15px;
     padding-right: 15px;
+
+    @include desktop {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      grid-template-rows: 67px repeat(2, 1fr);
+      grid-gap: 12px;
+        
+      }
+
+      div:nth-of-type(2) {
+        grid-row: 2;
+        grid-column: 1;
+      }
+  
+      div:nth-of-type(3) {
+        grid-row: 2;
+        grid-column: 2;
+      }
+  
+      div:nth-of-type(4) {
+        grid-row: 3;
+        grid-column: 1;
+      }
+
+      div:nth-of-type(5) {
+        grid-row: 3;
+        grid-column: 2;
+      }
     
     
 
     .card__titre {
         max-width: 40px;
         border-bottom: $tertiaire 3px solid;
+        @include desktop {
+            height: 50px;
+              
+            }
         
         & h2 {
             font-weight: 300;
@@ -87,6 +118,7 @@
     margin: 20px 0;
     cursor: pointer;
     background-color: white;
+
   
     &:active .dish-card-check {
       right: 0;
@@ -113,6 +145,8 @@
       justify-content: space-between;
       padding: 13px;
       overflow: auto;
+
+    
     
   
       h3 {
@@ -129,17 +163,24 @@
         flex-direction: row;
         align-items: center;
         flex: 1;
+        
+        
+        
   
         p:first-child {
           margin: 0;
           color: $soustitre;
-          
+          overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        
         }
   
         p:last-child {
           padding-left: 10px;
           margin: 0;
           font-weight: 400;
+          
         }
       }
     }
@@ -147,7 +188,7 @@
     .dish-card-check {
       flex: 0;
       position: relative;
-      right: -20%;
+      right: -15%;
       transition: all 500ms linear;
       display: flex;
       justify-content: center;
@@ -156,6 +197,7 @@
       color: white;
       border-radius: 0 15px 15px 0;
       cursor: pointer;
+      overflow: hidden;
   
       i {
         font-size: 2.2rem;
@@ -194,6 +236,13 @@
         display: inline-block;
         min-width: 195px;
         margin-top: 12px;
+
+        @include desktop {
+            margin-top: 10px;
+            margin-bottom: 50px;
+            padding: 2%;
+              
+            }
         
         
 
@@ -203,6 +252,7 @@
             transition: all 200ms;
             text-shadow: 0 1px 1px rgb(47, 47, 47);
             box-shadow: 3px 4px 10px rgba(0, 0, 0, 0.1);
+
             &:hover {
                 background: linear-gradient(rgba(255, 255, 255, 0.089), rgba(255, 255, 255, 0.281)), #F074DA;
                 box-shadow: 0 0 10px darken($tertiaire, 40);
